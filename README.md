@@ -100,7 +100,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          { loader: 'css-loader' options: { importLoaders: 1 } },
+          { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader'
         ]
       }
@@ -286,7 +286,7 @@ within the CSS directly as an annotation comment.
 **webpack.config.js**
 ```js
 {
-  loader: 'postcss-loader'
+  loader: 'postcss-loader',
   options: {
     sourceMap: 'inline'
   }
